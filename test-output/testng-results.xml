@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[Config file Loaded]]>
+    </line>
+    <line>
+      <![CDATA[OR File Loaded]]>
+    </line>
+    <line>
+      <![CDATA[Chrome Launched !!!]]>
+    </line>
+    <line>
+      <![CDATA[Navigated to: http://www.way2automation.com/angularjs-protractor/banking/#/login]]>
+    </line>
+    <line>
+      <![CDATA[Clicking Bank Manager Login]]>
+    </line>
+    <line>
+      <![CDATA[Clicked Bank Manager => Report Log ]]>
+    </line>
+    <line>
+      <![CDATA[Add Customer Button is visible]]>
+    </line>
+    <line>
+      <![CDATA[Clicked Add Customer]]>
+    </line>
+    <line>
+      <![CDATA[Login Test Passed Successfully ]]>
+    </line>
+    <line>
+      <![CDATA[Browser Reset for New Test]]>
+    </line>
+    <line>
+      <![CDATA[Clicked Bank Manager Login]]>
+    </line>
+    <line>
+      <![CDATA[Clicked Add Customer Button]]>
+    </line>
+    <line>
+      <![CDATA[Testing Execution Completed !!!!]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2026-03-29T21:38:41 IST" name="Suite" finished-at="2026-03-29T21:38:43 IST" duration-ms="2169">
+    <groups>
+    </groups>
+    <test started-at="2026-03-29T21:38:41 IST" name="All Tests" finished-at="2026-03-29T21:38:43 IST" duration-ms="2169">
+      <class name="com.w2a.testcases.LoginTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.w2a.testcases.LoginTest@7e6ef134]" started-at="2026-03-29T21:38:37 IST" name="setUp" finished-at="2026-03-29T21:38:41 IST" duration-ms="4313" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Config file Loaded]]>
+            </line>
+            <line>
+              <![CDATA[OR File Loaded]]>
+            </line>
+            <line>
+              <![CDATA[Chrome Launched !!!]]>
+            </line>
+            <line>
+              <![CDATA[Navigated to: http://www.way2automation.com/angularjs-protractor/banking/#/login]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="loginBankManager()[pri:0, instance:com.w2a.testcases.LoginTest@7e6ef134]" started-at="2026-03-29T21:38:41 IST" name="loginBankManager" finished-at="2026-03-29T21:38:42 IST" duration-ms="641" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Clicking Bank Manager Login]]>
+            </line>
+            <line>
+              <![CDATA[Clicked Bank Manager => Report Log ]]>
+            </line>
+            <line>
+              <![CDATA[Add Customer Button is visible]]>
+            </line>
+            <line>
+              <![CDATA[Clicked Add Customer]]>
+            </line>
+            <line>
+              <![CDATA[Login Test Passed Successfully ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- loginBankManager -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.w2a.testcases.LoginTest@7e6ef134]" started-at="2026-03-29T21:38:44 IST" name="tearDown" finished-at="2026-03-29T21:38:44 IST" duration-ms="145" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Testing Execution Completed !!!!]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.w2a.testcases.LoginTest -->
+      <class name="com.w2a.testcases.AddCustomerTest">
+        <test-method is-config="true" signature="resetBrowser()[pri:0, instance:com.w2a.testcases.AddCustomerTest@177bea38]" started-at="2026-03-29T21:38:42 IST" name="resetBrowser" finished-at="2026-03-29T21:38:42 IST" duration-ms="100" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Browser Reset for New Test]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- resetBrowser -->
+        <test-method signature="addCustomer(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.w2a.testcases.AddCustomerTest@177bea38]" started-at="2026-03-29T21:38:42 IST" name="addCustomer" data-provider="getData" finished-at="2026-03-29T21:38:43 IST" duration-ms="1317" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Ram]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Gautam]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[110055.0]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Customer added successfully]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Clicked Bank Manager Login]]>
+            </line>
+            <line>
+              <![CDATA[Clicked Add Customer Button]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- addCustomer -->
+      </class> <!-- com.w2a.testcases.AddCustomerTest -->
+    </test> <!-- All Tests -->
+  </suite> <!-- Suite -->
+</testng-results>
