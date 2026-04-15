@@ -14,25 +14,20 @@ pipeline {
 
         stage('Checkout Code') {
             steps {
-                git branch: 'main', url: 'https://github.com/your-username/your-repo.git'
+                git branch: 'main',
+                    url: 'https://github.com/p-i-k-l-u/AutomationTestingProject-DataDrivenProject-.git'
             }
         }
 
-        stage('Clean Project') {
+        stage('Build & Test') {
             steps {
-                bat 'mvn clean'
-            }
-        }
-
-        stage('Run Tests') {
-            steps {
-                bat 'mvn test'
+                bat 'mvn clean test'
             }
         }
 
         stage('Generate Reports') {
             steps {
-                echo 'Generating reports...'
+                echo 'Reports generated'
             }
         }
     }
@@ -40,7 +35,13 @@ pipeline {
     post {
 
         always {
+            // ✅ TestNG reports
             junit '**/target/surefire-reports/*.xml'
+
+            // ✅ Extent Report (IMPORTANT)
+            archiveArtifacts artifacts: 'target/extent-report.html', fingerprint: true
+
+            // ✅ TestNG HTML Reports
             archiveArtifacts artifacts: 'test-output/**/*.*', fingerprint: true
         }
 
