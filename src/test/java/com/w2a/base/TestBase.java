@@ -103,6 +103,7 @@ public class TestBase {
 				options.addArguments("--remote-allow-origins=*");
 				options.addArguments("--disable-notifications");
 				options.addArguments("--start-maximized");
+				options.addArguments("--headless=new");
 				options.addArguments("--disable-dev-shm-usage");
 				options.addArguments("--no-sandbox");
 
