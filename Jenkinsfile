@@ -39,7 +39,7 @@ pipeline {
             junit '**/target/surefire-reports/*.xml'
 
             // ✅ Extent Report (IMPORTANT)
-            archiveArtifacts artifacts: 'target/extent-report.html', fingerprint: true
+            archiveArtifacts artifacts: 'target\surefire-reports\html\extent-report.html', fingerprint: true
 
             // ✅ TestNG HTML Reports
             archiveArtifacts artifacts: 'test-output/**/*.*', fingerprint: true
